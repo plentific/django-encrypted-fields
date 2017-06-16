@@ -77,7 +77,6 @@ class EncryptedFieldMixin(object):
     A ValueError will be raised if the encrypted length of the data (including
     prefix if specified) is greater than the max_length of the field.
     """
-    __metaclass__ = models.SubfieldBase
 
     def __init__(self, *args, **kwargs):
         """
